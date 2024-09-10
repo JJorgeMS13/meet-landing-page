@@ -24,6 +24,10 @@ header {
 header img {
     margin: 4.8rem 8rem 0 8rem;
 }
+header img:hover {
+    cursor: pointer;
+    filter: saturate(3);
+}
 .hero-top {
     grid-column: 1 / -1;
     width: 100%;
@@ -134,6 +138,12 @@ button:hover {
     height: 14.4rem;
     width: 100%;
 }
+.content__card-img img:hover {
+    transition: linear 0.5s;
+    transform: scale(1.05) translateX(.4rem);
+    filter: saturate(1.5);
+}
+
 .content__text {
     display: flex;
     flex-direction: column;
