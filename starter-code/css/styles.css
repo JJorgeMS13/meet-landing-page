@@ -67,6 +67,7 @@ header img {
     font-size: 1.6rem;
     font-weight: 600;
     padding: 1.6rem 4rem;
+    transition: background-color 0.3s ease;
 }
 button:hover {
     cursor: pointer;
