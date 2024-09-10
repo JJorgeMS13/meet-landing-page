@@ -32,7 +32,7 @@ header img {
     background-image: url(../assets/tablet/image-hero.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 16rem;
     margin-top: 6.4rem;
 }
@@ -68,11 +68,22 @@ header img {
     font-weight: 600;
     padding: 1.6rem 4rem;
 }
+button:hover {
+    cursor: pointer;
+}
 .bg__cyan {
     background-color: #4D96A9;
+    transition: background-color 0.3s ease;
+}
+.bg__cyan:hover {
+    background-color: #71C0D4;
 }
 .bg__purple {
     background-color: #855FB1;
+    transition: background-color 0.3s ease;
+}
+.bg__purple:hover {
+    background-color: #B18BDD;
 }
 .main-content {
     grid-column: 1 / -1;
@@ -189,6 +200,9 @@ footer {
     font-weight: 600;
     padding: 1.6rem 4rem;
 }
+.hero__content button:hover {
+    background-color: #B18BDD;
+}
 /* ------------(> 425px)---------------- */
 @media screen and (min-width: 26rem) {
     footer {
@@ -265,14 +279,14 @@ footer {
     .hero-top__img {
         background-image: url(../assets/desktop/image-hero-left.png);
         background-position: right;
-        background-size: cover;
+        background-size: contain;
         margin-top: 0;
         width: 25.5%;
     }
     .hero-right__img {
         background-image: url(../assets/desktop/image-hero-right.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 25.5%;
     }
     .hero_text__content h1 {
